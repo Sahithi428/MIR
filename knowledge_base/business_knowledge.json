@@ -1,0 +1,64 @@
+{
+  "business_info": {
+    "name": "Mana Inti Ruchulu",
+    "tagline": "Homemade with Love • Authentic Andhra Taste",
+    "owner": "Pavani",
+    "phone1": "9885993213",
+    "phone2": "9948295369",
+    "address": "Pasuvullanka, Ipolavaram Mandal, Konaseema District, Andhra Pradesh, PIN 533220",
+    "delivery": "Orders accepted across India (All-India Delivery). Delivery charges are calculated and communicated directly by the business upon order processing.",
+    "hygiene": "100% Homemade, zero artificial preservatives, prepared using traditional Andhra family recipes with cold-pressed oils and hand-ground spices."
+  },
+  "knowledge_chunks": [
+    {
+      "id": "brand_info",
+      "topic": "Business Overview & Contact",
+      "content": "Mana Inti Ruchulu is owned by Pavani. Contact numbers: 9885993213 and 9948295369. Address: Pasuvullanka, Ipolavaram Mandal, Konaseema District, Andhra Pradesh, PIN 533220. Tagline: 'Homemade with Love • Authentic Andhra Taste'. All products are 100% authentic, homemade Andhra delicacies with no artificial preservatives."
+    },
+    {
+      "id": "delivery_info",
+      "topic": "All-India Delivery & Ordering",
+      "content": "Mana Inti Ruchulu accepts orders across India (All-India Delivery). Orders can be placed online through the catalogue. Delivery charges are calculated directly by the business after receiving the order and PIN code details. Once dispatched, customers receive courier name, tracking number, and tracking URL via the Track Order page."
+    },
+    {
+      "id": "veg_pickles",
+      "topic": "Veg Pickles Menu & Prices",
+      "content": "Available Veg Pickles:\n- Avakaya / Mango Pickle: ₹400 for ½ kg, ₹750 for 1 kg.\n- Gongura Pickle: ₹400 for ½ kg, ₹750 for 1 kg.\n- Tomato Pickle: ₹350 for ½ kg, ₹650 for 1 kg.\n- Allam (Ginger) Pickle: ₹380 for ½ kg, ₹700 for 1 kg.\n- Lemon Pickle (Nimmakaya): ₹350 for ½ kg, ₹650 for 1 kg.\n- Cut Mango Pickle: ₹380 for ½ kg, ₹700 for 1 kg."
+    },
+    {
+      "id": "non_veg_pickles",
+      "topic": "Non-Veg Pickles Menu & Prices",
+      "content": "Available Non-Veg Pickles:\n- Prawns Pickle (Royyala Avakaya): ₹900 for ½ kg, ₹1,700 for 1 kg.\n- Chicken Pickle (Boneless): ₹750 for ½ kg, ₹1,400 for 1 kg.\n- Chicken Pickle (With Bone): ₹650 for ½ kg, ₹1,200 for 1 kg.\n- Mutton Pickle: ₹1,100 for ½ kg, ₹2,100 for 1 kg.\n- Fish Pickle: ₹800 for ½ kg, ₹1,500 for 1 kg."
+    },
+    {
+      "id": "podi_varieties",
+      "topic": "Podi / Powder Varieties Menu & Prices",
+      "content": "Available Podi / Powder Varieties:\n- Andhra Karam Podi: ₹220 for ½ kg, ₹400 for 1 kg.\n- Peanut Podi (Palli Podi): ₹200 for ½ kg, ₹380 for 1 kg.\n- Kandi Podi (Toor Dal Powder): ₹210 for ½ kg, ₹400 for 1 kg.\n- Idli Karam Podi: ₹200 for ½ kg, ₹380 for 1 kg.\n- Nalla Karam Podi: ₹220 for ½ kg, ₹420 for 1 kg.\n- Curry Leaf (Karivepaku) Podi: ₹230 for ½ kg, ₹440 for 1 kg."
+    },
+    {
+      "id": "pindi_vantalu",
+      "topic": "Pindi Vantalu Menu & Prices",
+      "content": "Available Pindi Vantalu (Sweets & Traditional Snacks):\n- Sunnundalu (Urad Dal Jaggery Laddu): ₹300 for ½ kg, ₹550 for 1 kg.\n- Ariselu (Bellam Ariselu): ₹320 for ½ kg, ₹600 for 1 kg.\n- Murukku / Janthikalu: ₹250 for ½ kg, ₹450 for 1 kg.\n- Bellam Gavvalu: ₹260 for ½ kg, ₹480 for 1 kg.\n- Chekkalu (Pappu Chekkalu): ₹250 for ½ kg, ₹450 for 1 kg.\n- Boondhi Laddu: ₹280 for ½ kg, ₹520 for 1 kg."
+    },
+    {
+      "id": "healthy_food",
+      "topic": "Healthy Food Menu & Prices",
+      "content": "Available Healthy Food Items:\n- Healthy Millet Mix: ₹250 for ½ kg, ₹450 for 1 kg.\n- Flax Seed (Avise Ginjalu) Podi: ₹220 for ½ kg, ₹400 for 1 kg.\n- Dry Fruit Laddu (Sugar-free Jaggery): ₹450 for ½ kg, ₹850 for 1 kg.\n- Ragi Malt Health Blend: ₹230 for ½ kg, ₹420 for 1 kg."
+    },
+    {
+      "id": "snacks",
+      "topic": "Snacks Menu & Prices",
+      "content": "Available Snacks:\n- Ribbon Pakoda: ₹240 for ½ kg, ₹450 for 1 kg.\n- Corn Flakes Mixture: ₹230 for ½ kg, ₹420 for 1 kg.\n- Spicy Chegodilu: ₹250 for ½ kg, ₹460 for 1 kg.\n- Special Andhra Mixture: ₹260 for ½ kg, ₹480 for 1 kg."
+    },
+    {
+      "id": "shelf_life",
+      "topic": "Shelf Life & Storage Instructions",
+      "content": "Shelf Life Guidelines:\n- Veg Pickles: 6 to 9 months when stored in an airtight jar using a clean, dry spoon.\n- Non-Veg Pickles: 3 to 6 months (refrigeration recommended for longer freshness).\n- Podis / Powders: 4 to 6 months.\n- Pindi Vantalu & Snacks: 30 to 45 days.\n- Healthy Foods: 3 to 6 months."
+    },
+    {
+      "id": "payment_tracking",
+      "topic": "Payment & Order Tracking Instructions",
+      "content": "Payment Options: Payment is flexible via UPI (PhonePe/GPay/Paytm) or Bank Transfer or Cash on Delivery where available. Order Tracking: Customers can track their order on the Track Your Order page using their Order ID (format: MIR-YYYYMMDD-XXXX) and Mobile Number."
+    }
+  ]
+}
