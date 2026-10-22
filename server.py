@@ -289,26 +289,48 @@ def track_order():
     order_id = request.args.get('order_id', '').strip()
     mobile = request.args.get('mobile', '').strip()
 
-    if not order_id or not mobile:
-        return jsonify({"error": "Order ID and Mobile number are required."}), 400
+    if not order_id and not mobile:
+        return jsonify({"error": "Please enter your Mobile number or Order ID to track."}), 400
 
     conn = get_db()
-    order_row = conn.execute(
-        "SELECT * FROM orders WHERE LOWER(order_id) = LOWER(?) AND mobile LIKE ?",
-        (order_id, f"%{mobile}%")
-    ).fetchone()
+    if order_id and mobile:
+        order_row = conn.execute(
+            "SELECT * FROM orders WHERE LOWER(order_id) = LOWER(?) AND mobile LIKE ?",
+            (order_id, f"%{mobile}%")
+        ).fetchone()
+    elif mobile:
+        order_row = conn.execute(
+            "SELECT * FROM orders WHERE mobile LIKE ? ORDER BY id DESC LIMIT 1",
+            (f"%{mobile}%",)
+        ).fetchone()
+    else:
+        order_row = conn.execute(
+            "SELECT * FROM orders WHERE LOWER(order_id) = LOWER(?)",
+            (order_id,)
+        ).fetchone()
 
     if not order_row:
         conn.close()
-        return jsonify({"error": "Order not found. Please verify your Order ID and Mobile number."}), 404
+        return jsonify({"error": "No orders found. Please verify your Mobile number or Order ID."}), 404
 
     items = conn.execute("SELECT * FROM order_items WHERE order_id = ?", (order_row['id'],)).fetchall()
     notifications = conn.execute("SELECT * FROM order_notifications WHERE order_id = ? ORDER BY id DESC", (order_row['order_id'],)).fetchall()
+
+    # Also include any other recent orders for this customer so they can easily switch between orders
+    related_orders = []
+    if order_row['mobile']:
+        all_for_mob = conn.execute(
+            "SELECT id, order_id, created_at, status, total FROM orders WHERE mobile LIKE ? ORDER BY id DESC",
+            (f"%{order_row['mobile']}%",)
+        ).fetchall()
+        related_orders = [dict(r) for r in all_for_mob]
+
     conn.close()
 
     res = dict(order_row)
     res['items'] = [dict(i) for i in items]
     res['notifications'] = [dict(n) for n in notifications]
+    res['related_orders'] = related_orders
     return jsonify(res)
 
 @app.route('/api/orders/history', methods=['GET'])
